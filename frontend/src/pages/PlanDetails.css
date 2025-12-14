@@ -1,0 +1,195 @@
+.plan-details {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.plan-details-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.plan-header {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  margin-bottom: 32px;
+}
+
+.plan-image-large {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.plan-image-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plan-info h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--dark);
+}
+
+.plan-trainer-info {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.trainer-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: opacity 0.3s ease;
+}
+
+.trainer-link:hover {
+  opacity: 0.8;
+}
+
+.trainer-avatar-large {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-light);
+  font-size: 32px;
+}
+
+.trainer-avatar-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trainer-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.trainer-bio {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.plan-meta-large {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+
+.meta-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.plan-body {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.plan-section {
+  margin-bottom: 32px;
+}
+
+.plan-section:last-child {
+  margin-bottom: 0;
+}
+
+.plan-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+.plan-content-full {
+  background: var(--light);
+  padding: 24px;
+  border-radius: 8px;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.locked-section {
+  text-align: center;
+}
+
+.locked-content {
+  background: var(--light);
+  padding: 40px;
+  border-radius: 8px;
+  border: 2px dashed var(--gray-light);
+}
+
+.locked-content p {
+  font-size: 18px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.subscribe-cta {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 2px solid var(--gray-light);
+}
+
+.text-muted {
+  color: var(--gray);
+  margin-top: 16px;
+}
+
+.error-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.error-state h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: var(--dark);
+}
+
+@media (max-width: 768px) {
+  .plan-header,
+  .plan-body {
+    padding: 24px;
+  }
+
+  .plan-info h1 {
+    font-size: 28px;
+  }
+
+  .plan-meta-large {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
